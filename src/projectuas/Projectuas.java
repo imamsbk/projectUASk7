@@ -16,6 +16,8 @@ public class Projectuas {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        MenuUtama m = new MenuUtama();
+        m.setVisible(true);
     }
     
 }
