@@ -29,51 +29,61 @@ public class MenuUtama extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        mndpd = new javax.swing.JMenuItem();
+        mndprd1 = new javax.swing.JMenuItem();
+        mndprd2 = new javax.swing.JMenuItem();
+        thn = new javax.swing.JMenu();
+        mn2009 = new javax.swing.JMenuItem();
+        mn2014 = new javax.swing.JMenuItem();
+        mn2019 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMenu1.setText("STATISTIK PEMILU");
 
-        jMenuItem1.setText("DPD");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        mndpd.setText("DPD");
+        mndpd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                mndpdActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(mndpd);
 
-        jMenuItem2.setText("DPRD I");
-        jMenu1.add(jMenuItem2);
+        mndprd1.setText("DPRD I");
+        mndprd1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mndprd1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(mndprd1);
 
-        jMenuItem3.setText("DPRD II");
-        jMenu1.add(jMenuItem3);
+        mndprd2.setText("DPRD II");
+        mndprd2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mndprd2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(mndprd2);
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("TAHUN ");
+        thn.setText("TAHUN ");
 
-        jMenuItem4.setText("2009");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        mn2009.setText("2009");
+        mn2009.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                mn2009ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem4);
+        thn.add(mn2009);
 
-        jMenuItem5.setText("2014");
-        jMenu2.add(jMenuItem5);
+        mn2014.setText("2014");
+        thn.add(mn2014);
 
-        jMenuItem6.setText("2019");
-        jMenu2.add(jMenuItem6);
+        mn2019.setText("2019");
+        thn.add(mn2019);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(thn);
 
         setJMenuBar(jMenuBar1);
 
@@ -91,13 +101,27 @@ public class MenuUtama extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void mndpdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mndpdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+        DPD d = new DPD();
+        d.setVisible(true);
+    }//GEN-LAST:event_mndpdActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void mn2009ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mn2009ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_mn2009ActionPerformed
+
+    private void mndprd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mndprd1ActionPerformed
+        // TODO add your handling code here:
+        DPRD1 d = new DPRD1();
+        d.setVisible(true);
+    }//GEN-LAST:event_mndprd1ActionPerformed
+
+    private void mndprd2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mndprd2ActionPerformed
+        // TODO add your handling code here:
+        DPRD2 d = new DPRD2();
+        d.setVisible(true);
+    }//GEN-LAST:event_mndprd2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -136,13 +160,13 @@ public class MenuUtama extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem mn2009;
+    private javax.swing.JMenuItem mn2014;
+    private javax.swing.JMenuItem mn2019;
+    private javax.swing.JMenuItem mndpd;
+    private javax.swing.JMenuItem mndprd1;
+    private javax.swing.JMenuItem mndprd2;
+    private javax.swing.JMenu thn;
     // End of variables declaration//GEN-END:variables
 }
