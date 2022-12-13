@@ -27,6 +27,8 @@ public class MenuUtama extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         mndpd = new javax.swing.JMenuItem();
@@ -38,6 +40,11 @@ public class MenuUtama extends javax.swing.JFrame {
         mn2019 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel1.setText("SELAMAT DATANG DI DATA BPS PEMILU");
+
+        jLabel2.setText("14 DESEMBER 2022");
 
         jMenu1.setText("STATISTIK PEMILU");
 
@@ -78,9 +85,19 @@ public class MenuUtama extends javax.swing.JFrame {
         thn.add(mn2009);
 
         mn2014.setText("2014");
+        mn2014.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mn2014ActionPerformed(evt);
+            }
+        });
         thn.add(mn2014);
 
         mn2019.setText("2019");
+        mn2019.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mn2019ActionPerformed(evt);
+            }
+        });
         thn.add(mn2019);
 
         jMenuBar1.add(thn);
@@ -91,11 +108,23 @@ public class MenuUtama extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(jLabel1)
+                .addContainerGap(94, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 274, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(168, 168, 168)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 168, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addContainerGap())
         );
 
         pack();
@@ -109,6 +138,9 @@ public class MenuUtama extends javax.swing.JFrame {
 
     private void mn2009ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mn2009ActionPerformed
         // TODO add your handling code here:
+        CekData c = new CekData();
+        c.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_mn2009ActionPerformed
 
     private void mndprd1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mndprd1ActionPerformed
@@ -122,6 +154,20 @@ public class MenuUtama extends javax.swing.JFrame {
         DPRD2 d = new DPRD2();
         d.setVisible(true);
     }//GEN-LAST:event_mndprd2ActionPerformed
+
+    private void mn2014ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mn2014ActionPerformed
+        // TODO add your handling code here:
+        CekData c = new CekData();
+        c.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_mn2014ActionPerformed
+
+    private void mn2019ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mn2019ActionPerformed
+        // TODO add your handling code here:
+        CekData c = new CekData();
+        c.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_mn2019ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -159,6 +205,8 @@ public class MenuUtama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem mn2009;
