@@ -27,9 +27,13 @@ public class MenuUtama extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu2 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
+        thn1 = new javax.swing.JMenu();
+        mn2010 = new javax.swing.JMenuItem();
+        mn2015 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         mndpd = new javax.swing.JMenuItem();
         mndprd1 = new javax.swing.JMenuItem();
@@ -39,12 +43,36 @@ public class MenuUtama extends javax.swing.JFrame {
         mn2014 = new javax.swing.JMenuItem();
         mn2019 = new javax.swing.JMenuItem();
 
+        jMenu2.setText("jMenu2");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1200, 600));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("SELAMAT DATANG DI DATA BPS PEMILU");
 
         jLabel2.setText("14 DESEMBER 2022");
+
+        thn1.setText("FILE");
+
+        mn2010.setText("ABOUT");
+        mn2010.setPreferredSize(new java.awt.Dimension(40, 22));
+        mn2010.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mn2010ActionPerformed(evt);
+            }
+        });
+        thn1.add(mn2010);
+
+        mn2015.setText("KELUAR");
+        mn2015.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mn2015ActionPerformed(evt);
+            }
+        });
+        thn1.add(mn2015);
+
+        jMenuBar1.add(thn1);
 
         jMenu1.setText("STATISTIK PEMILU");
 
@@ -169,6 +197,14 @@ public class MenuUtama extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_mn2019ActionPerformed
 
+    private void mn2010ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mn2010ActionPerformed
+        new Login().setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_mn2010ActionPerformed
+
+    private void mn2015ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mn2015ActionPerformed
+       dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_mn2015ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -208,13 +244,17 @@ public class MenuUtama extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem mn2009;
+    private javax.swing.JMenuItem mn2010;
     private javax.swing.JMenuItem mn2014;
+    private javax.swing.JMenuItem mn2015;
     private javax.swing.JMenuItem mn2019;
     private javax.swing.JMenuItem mndpd;
     private javax.swing.JMenuItem mndprd1;
     private javax.swing.JMenuItem mndprd2;
     private javax.swing.JMenu thn;
+    private javax.swing.JMenu thn1;
     // End of variables declaration//GEN-END:variables
 }
